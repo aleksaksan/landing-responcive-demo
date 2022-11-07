@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Manrope';
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.manrope-orange {
+  font-family: 'Manrope';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #EF633E;
+}
+
+.font-elsie {
+  font-family: 'Elsie';
+  font-weight: 900;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Manrope';
+}
+
+.link-btn {
+  padding: 16px 32px 14px;
+  font-family: 'Elsie';
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.transponent-btn {
+  color: #5DC4B8;
+  border: 1px solid #5DC4B8;
+}
+
+.filled-btn {
+  background: linear-gradient(180deg, #96E4DD 0%, #5DC4B8 100%);
+  color: white;
+}
