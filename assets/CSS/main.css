@@ -16,7 +16,9 @@ ul {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1190px;
+  padding-left: 10px;
+  padding-right: 10px;
   width: 100%;
   margin: 0 auto;
 }
@@ -51,6 +53,7 @@ a {
   line-height: 18px;
   border-radius: 12px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .transponent-btn {
@@ -61,6 +64,10 @@ a {
 .filled-btn {
   background: linear-gradient(180deg, #96E4DD 0%, #5DC4B8 100%);
   color: white;
+}
+
+.pos-absolut {
+  position: absolute;
 }
 
 body {
@@ -96,21 +103,176 @@ header nav + .link-btn {
 .welcome-part {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0 160px;
+  padding: 100px 0 160px;
 }
 .welcome-part .greeting-title {
   font-size: 72px;
   line-height: 80px;
 }
-.welcome-part .greeting-wrapper {
+
+.greeting-block-wrapper {
   width: 470px;
   color: #333333;
+  padding-top: 90px;
 }
-.welcome-part .greeting-wrapper .greeting-title {
+.greeting-block-wrapper .greeting-title {
   margin-top: 26px;
 }
-.welcome-part .greeting-wrapper p {
+.greeting-block-wrapper p {
   display: block;
   margin-bottom: 36px;
   margin-top: 22px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.gradient-cirle-wrapper {
+  position: absolute;
+  width: 620px;
+  height: 574px;
+  overflow: hidden;
+  top: -184px;
+  left: 86px;
+  z-index: -5;
+}
+.gradient-cirle-wrapper::before {
+  content: "";
+  width: 892px;
+  height: 892px;
+  background: linear-gradient(133.44deg, #FCEEE9 17.94%, #ECF8F8 85.2%);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.greeting-picture-container {
+  min-width: 570px;
+  height: 544px;
+  position: relative;
+}
+.greeting-picture-container .orange-rect-wrapper {
+  top: 32px;
+  left: 0;
+}
+.greeting-picture-container .orange-rect {
+  width: 270px;
+  height: 416px;
+  background: linear-gradient(180deg, #F89C72 0%, #EF633E 100%);
+  border-radius: 100px 24px 24px 24px;
+  position: relative;
+}
+.greeting-picture-container .orange-rect::before {
+  content: "";
+  background: url(../img/png/greeting_girl.png);
+  width: 962px;
+  height: 561px;
+  position: absolute;
+  bottom: -37px;
+  left: -322px;
+}
+.greeting-picture-container .green-rect-wrapper {
+  top: 0;
+  right: 68px;
+}
+.greeting-picture-container .green-rect {
+  width: 202px;
+  height: 96px;
+  background: linear-gradient(180deg, #96E4DD 0%, #5DC4B8 100%);
+  border-radius: 16px 32px 16px 16px;
+  position: relative;
+  overflow: hidden;
+}
+.greeting-picture-container .green-rect::before {
+  content: "";
+  background: url(../img/png/greeting_shape.png);
+  width: 525px;
+  height: 457px;
+  position: absolute;
+  top: -66px;
+  left: -100px;
+}
+.greeting-picture-container .food-rect-wrapper {
+  right: 0;
+  bottom: 0;
+}
+.greeting-picture-container .food-rect {
+  width: 270px;
+  height: 416px;
+  border-radius: 24px 100px 24px 24px;
+  position: relative;
+  overflow: hidden;
+}
+.greeting-picture-container .food-rect::before {
+  content: "";
+  background: url(../img/png/greeting_food.png);
+  position: absolute;
+  width: 500px;
+  height: 750px;
+  right: 0;
+  bottom: -56px;
+}
+.greeting-picture-container .circle-wrapper {
+  top: 192px;
+  left: 200px;
+}
+.greeting-picture-container .circle-wrapper .circle {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+}
+.greeting-picture-container .circle-wrapper .circle::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-left: 25px solid #333333;
+  border-bottom: 18px solid transparent;
+  top: 67px;
+  left: 76px;
+}
+.greeting-picture-container .icons-wrapper {
+  position: absolute;
+  left: 64px;
+  bottom: 0;
+  font-size: 0;
+}
+.greeting-picture-container .icons-wrapper > .circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #FFFFFF;
+  font-size: 0;
+}
+.greeting-picture-container .icons-wrapper .cup {
+  background: linear-gradient(180deg, #F89C72 0%, #EF633E 100%);
+}
+.greeting-picture-container .icons-wrapper .cup::before {
+  content: "";
+  background: url(../img/svg/greeting_cup.svg);
+  width: 24px;
+  height: 26px;
+  position: absolute;
+  left: 18px;
+  top: 14px;
+}
+.greeting-picture-container .icons-wrapper .user-1 {
+  background: url(../img/png/greeting_user1.png);
+  background-position: -2px -2px;
+}
+.greeting-picture-container .icons-wrapper .user-2 {
+  background: url(../img/png/greeting_user2.png);
+  background-position: -2px -2px;
+}
+.greeting-picture-container .icons-wrapper .user-3 {
+  background: url(../img/png/greeting_user3.png);
+  background-position: -2px -2px;
+}
+.greeting-picture-container .icons-wrapper .circle + .circle {
+  margin-left: -16px;
 }/*# sourceMappingURL=main.css.map */

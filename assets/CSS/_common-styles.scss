@@ -16,7 +16,9 @@ ul {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1190px;
+  padding-left: 10px;
+  padding-right: 10px;
   width: 100%;
   margin: 0 auto;
 }
@@ -51,6 +53,7 @@ a {
   line-height: 18px;
   border-radius: 12px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .transponent-btn {
@@ -61,4 +64,8 @@ a {
 .filled-btn {
   background: linear-gradient(180deg, #96E4DD 0%, #5DC4B8 100%);
   color: white;
+}
+
+.pos-absolut {
+  position: absolute;
 }
