@@ -103,6 +103,53 @@ header nav + .link-btn {
   color: black;
 }
 
+@media (max-width: 766.98px) {
+  .header-burger {
+    display: block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px #5DC4B8 solid;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .header-burger > span {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #5DC4B8;
+    transition: all ease-in-out 0.2s;
+    top: 21px;
+    left: 12px;
+  }
+  .header-burger::before, .header-burger::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #5DC4B8;
+    left: 12px;
+    transition: all ease-in-out 0.2s;
+  }
+  .header-burger::before {
+    top: 14px;
+  }
+  .header-burger::after {
+    bottom: 14px;
+  }
+  .header-burger.active > span {
+    scale: 0;
+  }
+  .header-burger.active::before {
+    rotate: 45deg;
+    top: 21px;
+  }
+  .header-burger.active::after {
+    rotate: -45deg;
+    bottom: 21px;
+  }
+}
 .greeting-part {
   display: flex;
   justify-content: space-between;
@@ -304,7 +351,7 @@ header nav + .link-btn {
     align-self: flex-end;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 766.98px) {
   .gradient-cirle-wrapper {
     width: 70.4vw;
     height: 89.33vw;

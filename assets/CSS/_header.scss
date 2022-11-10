@@ -26,6 +26,62 @@ header {
   color: black;
 }
 
-.header-burger {
+// .header-burger {
+//   display: none;
+// }
+
+@media (max-width: 766.98px) {
+  .header-burger {
+    display: block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px #5DC4B8 solid;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &>span {
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: #5DC4B8;
+      transition: all ease-in-out 0.2s;
+      top: 21px;
+      left: 12px;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: #5DC4B8;
+      left: 12px;
+      transition: all ease-in-out 0.2s;
+    }
+
+    &::before {
+      top: 14px;
+    }
+    &::after {
+      bottom: 14px;
+    }
+  }
   
+  .header-burger.active {
+    &>span {
+      scale: (0);
+    }
+    &::before {
+      rotate: (45deg);
+      top: 21px;
+    }
+    &::after {
+      rotate: (-45deg);
+      bottom: 21px;
+    }
+  }
+
 }
