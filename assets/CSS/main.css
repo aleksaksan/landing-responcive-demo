@@ -9,17 +9,23 @@ body {
   margin: 0 auto;
   font-family: "Manrope";
   font-weight: normal;
+  background-color: white;
 }
 
 ul {
   list-style-type: none;
 }
 
+@media (max-width: 1439.98px) {
+  .container {
+    overflow: hidden;
+  }
+}
 .container {
-  max-width: 1190px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
+  min-width: 320px;
+  max-width: 1116px;
+  padding-left: 23px;
+  padding-right: 23px;
   margin: 0 auto;
 }
 
@@ -54,6 +60,7 @@ a {
   border-radius: 12px;
   display: inline-block;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .transponent-btn {
@@ -68,10 +75,6 @@ a {
 
 .pos-absolut {
   position: absolute;
-}
-
-body {
-  background-color: #FFFFFF;
 }
 
 .title {
@@ -100,25 +103,24 @@ header nav + .link-btn {
   color: black;
 }
 
-.welcome-part {
+.greeting-part {
   display: flex;
   justify-content: space-between;
-  padding: 100px 0 160px;
+  padding: 94px 0 160px;
 }
-.welcome-part .greeting-title {
+
+.greeting-title {
+  margin-top: 26px;
   font-size: 72px;
   line-height: 80px;
 }
 
-.greeting-block-wrapper {
+.greeting-text-block-wrapper {
   width: 470px;
   color: #333333;
   padding-top: 90px;
 }
-.greeting-block-wrapper .greeting-title {
-  margin-top: 26px;
-}
-.greeting-block-wrapper p {
+.greeting-text-block-wrapper p {
   display: block;
   margin-bottom: 36px;
   margin-top: 22px;
@@ -126,19 +128,28 @@ header nav + .link-btn {
   line-height: 32px;
 }
 
+.gradient-wrapper {
+  position: relative;
+  max-width: 1440px;
+}
+
 .gradient-cirle-wrapper {
   position: absolute;
-  width: 620px;
-  height: 574px;
+  width: 42.99vw;
+  height: 39.79vw;
+  max-width: 619px;
+  max-height: 573px;
   overflow: hidden;
-  top: -184px;
-  left: 86px;
+  top: 0;
+  right: 0;
   z-index: -5;
 }
 .gradient-cirle-wrapper::before {
   content: "";
-  width: 892px;
-  height: 892px;
+  width: 61.875vw;
+  max-width: 891px;
+  height: 61.875vw;
+  max-height: 891px;
   background: linear-gradient(133.44deg, #FCEEE9 17.94%, #ECF8F8 85.2%);
   border-radius: 50%;
   position: absolute;
@@ -146,8 +157,12 @@ header nav + .link-btn {
   bottom: 0;
 }
 
+.greeting-pic-mobile {
+  display: none;
+}
+
 .greeting-picture-container {
-  min-width: 570px;
+  width: 570px;
   height: 544px;
   position: relative;
 }
@@ -275,4 +290,54 @@ header nav + .link-btn {
 }
 .greeting-picture-container .icons-wrapper .circle + .circle {
   margin-left: -16px;
+}
+
+@media (max-width: 1070px) {
+  .greeting-part {
+    flex-direction: column-reverse;
+    flex-grow: 0;
+  }
+  .greeting-text-block-wrapper {
+    align-self: center;
+  }
+  .greeting-picture-container {
+    align-self: flex-end;
+  }
+}
+@media (max-width: 767.98px) {
+  .gradient-cirle-wrapper {
+    width: 70.4vw;
+    height: 89.33vw;
+  }
+  .gradient-cirle-wrapper::before {
+    width: 119vw;
+    height: 119vw;
+  }
+  .greeting-picture-container {
+    display: none;
+  }
+  .greeting-pic-mobile {
+    display: block;
+    align-self: center;
+    width: 100%;
+  }
+  .greeting-part {
+    padding: 16px 0 20px;
+  }
+  .greeting-title {
+    margin-top: 23px;
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .greeting-text-block-wrapper {
+    margin-top: 26px;
+    padding: 0 28px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .greeting-text-block-wrapper p {
+    margin-top: 9px;
+    margin-bottom: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */

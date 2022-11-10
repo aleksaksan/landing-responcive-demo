@@ -9,17 +9,24 @@ body {
   margin: 0 auto;
   font-family: 'Manrope';
   font-weight: normal;
+  background-color: white;
 }
 
 ul {
   list-style-type: none;
 }
 
+@media (max-width: 1439.98px) {
+  .container {
+    overflow: hidden;
+  }
+}
+
 .container {
-  max-width: 1190px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
+  min-width: 320px;
+  max-width: 1116px;
+  padding-left: 23px;
+  padding-right: 23px;
   margin: 0 auto;
 }
 
@@ -54,6 +61,7 @@ a {
   border-radius: 12px;
   display: inline-block;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .transponent-btn {

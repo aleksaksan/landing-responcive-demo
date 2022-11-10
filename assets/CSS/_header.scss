@@ -1,0 +1,31 @@
+.title {
+  font-size: 40px;
+  line-height: 48px;
+  margin-right: 59px;
+}
+
+header {
+  padding: 16px 0;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    width: 315px;
+  }
+
+  nav+.link-btn {
+    margin-left: auto;
+  }
+}
+
+.nav-link {
+  font-size: 16px;
+  line-height: 32px;
+  color: black;
+}
+
+.header-burger {
+  
+}
