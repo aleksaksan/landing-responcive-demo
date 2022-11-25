@@ -40,6 +40,9 @@ ul {
 .font-elsie {
   font-family: "Elsie";
   font-weight: 900;
+  font-size: 56px;
+  line-height: 64px;
+  color: #333333;
 }
 
 .flex-between {
@@ -77,6 +80,33 @@ a {
   position: absolute;
 }
 
+.page-title {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 470px;
+  text-align: center;
+  color: #333333;
+}
+.page-title .font-elsie {
+  margin: 23px 0 11px;
+}
+.page-title > p {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+@media (max-width: 1070px) {
+  .page-title .font-elsie {
+    margin: 20px 0 14px;
+  }
+}
+@media (max-width: 766.98px) {
+  .font-elsie {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
 .title {
   font-size: 40px;
   line-height: 48px;
@@ -194,7 +224,7 @@ header nav + .link-btn {
 .greeting-part {
   display: flex;
   justify-content: space-between;
-  padding: 94px 0 160px;
+  padding: 94px 0 0;
 }
 
 .greeting-title {
@@ -380,7 +410,7 @@ header nav + .link-btn {
   margin-left: -16px;
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1069.98px) {
   .greeting-part {
     flex-direction: column-reverse;
     flex-grow: 0;
@@ -410,7 +440,7 @@ header nav + .link-btn {
     width: 100%;
   }
   .greeting-part {
-    padding: 16px 0 20px;
+    padding: 16px 0 0;
   }
   .greeting-title {
     margin-top: 23px;
@@ -427,5 +457,254 @@ header nav + .link-btn {
   .greeting-text-block-wrapper p {
     margin-top: 9px;
     margin-bottom: 16px;
+  }
+}
+.features-part {
+  padding-top: 184px;
+  padding-bottom: 192px;
+}
+
+.features-card {
+  width: 270px;
+  height: 400px;
+  box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.080899);
+  border-radius: 100px 24px 24px 24px;
+  text-align: center;
+  padding: 0 32px;
+  color: #333333;
+}
+.features-card > .circle {
+  margin: 0 auto;
+  margin-top: -16px;
+  margin-bottom: 29px;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features-card > h4 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Elsie";
+}
+.features-card:nth-child(1) .circle {
+  background: linear-gradient(180deg, #FFF0EC 0%, #FFDDD4 100%);
+}
+.features-card:nth-child(2) {
+  margin-top: 48px;
+}
+.features-card:nth-child(2) .circle {
+  background: linear-gradient(180deg, #E4FFFC 0%, #C5FFF8 100%);
+}
+.features-card:nth-child(3) .circle {
+  background: linear-gradient(180deg, #FFF8EC 0%, #FFEFD4 100%);
+}
+.features-card > p {
+  color: rgba(51, 51, 51, 0.5019607843);
+  margin: 17px 0 13px;
+  line-height: 32px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  padding-top: 82px;
+  flex-wrap: wrap;
+}
+
+.cards-container:last-child {
+  border-radius: 24px 24px 100px 24px;
+}
+
+@media (max-width: 766.98px) {
+  .features-part {
+    padding-top: 152px;
+  }
+  .features-card:nth-child(2) {
+    margin-top: 0;
+  }
+  .cards-container {
+    gap: 64px;
+  }
+}
+.about-part {
+  padding-top: 48px;
+}
+.about-part .container {
+  overflow: visible;
+}
+
+.about_background-container {
+  background: linear-gradient(135deg, #FCEEE9 0%, #ECF8F8 100%);
+  border-radius: 0px 24px 100px 0px;
+  max-width: 1305px;
+  padding: 0 0 0 9.375vw;
+  margin-left: -9.375vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about_picture-container {
+  margin: -48px 30px -32px 0;
+  position: relative;
+  width: 570px;
+  height: 672px;
+}
+.about_picture-container .green-rect {
+  background: linear-gradient(180deg, #96E4DD 0%, #5DC4B8 100%);
+  border-radius: 16px 32px 16px 16px;
+  width: 202px;
+  height: 96px;
+  top: 16px;
+  right: 68px;
+  overflow: hidden;
+}
+.about_picture-container .green-rect::before {
+  content: "";
+  background: url(../img/png/about_shape.png);
+  width: 850px;
+  height: 722px;
+  position: absolute;
+  top: -313px;
+  left: -324px;
+}
+.about_picture-container .orange-rect {
+  background: linear-gradient(180deg, #F89C72 0%, #EF633E 100%);
+  border-radius: 24px 24px 24px 100px;
+  width: 270px;
+  height: 192px;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+}
+.about_picture-container .orange-rect::before {
+  content: "";
+  background: url(../img/png/about_shape.png);
+  width: 850px;
+  height: 722px;
+  position: absolute;
+  top: -265px;
+  left: -290px;
+}
+
+.japan-kitchen-img {
+  width: 270px;
+  height: 448px;
+  border-radius: 100px 24px 24px 24px;
+  background-image: url("../img/png/about_japan_kitchen.png");
+}
+
+.europe-kitchen-img {
+  width: 270px;
+  height: 416px;
+  position: absolute;
+  border-radius: 24px 24px 100px 24px;
+  background-image: url("../img/png/about_europe_kitchen.png");
+  right: 0;
+  top: 144px;
+}
+
+.about_parag {
+  width: 370px;
+  padding-top: 88px;
+  margin: 0 auto;
+}
+.about_parag h3 {
+  margin: 23px 0 25px;
+}
+.about_parag div {
+  color: #333333;
+  font-size: 20px;
+  line-height: 32px;
+}
+.about_parag p {
+  margin: 18px 0 32px;
+  color: rgba(51, 51, 51, 0.5);
+  font-size: 16px;
+  line-height: 32px;
+}
+.about_parag .link-btn {
+  text-transform: uppercase;
+}
+
+.about_picture {
+  display: none;
+  margin-top: -32px;
+}
+
+.about_statistics {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.statistics-card {
+  margin-top: 33px;
+  width: 206px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.statistics-card .manrope-orange {
+  margin-top: 9px;
+  margin-bottom: 18px;
+}
+.statistics-card .font-elsie {
+  font-size: 56px;
+  line-height: 64px;
+}
+.statistics-card > p {
+  line-height: 32px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.about_statistics {
+  padding-top: 142px;
+  padding-bottom: 170px;
+}
+
+@media (max-width: 766.98px) {
+  .about_picture {
+    display: block;
+  }
+  .about_picture-container {
+    display: none;
+  }
+  .about-part .font-elsie {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .about_parag {
+    padding: 36px 0 80px 28px;
+  }
+}
+@media (max-width: 1070px) {
+  .about-part {
+    padding-top: 32px;
+  }
+  .about-part > .container {
+    padding: 0;
+  }
+  .about-part > .container > .about_background-container {
+    margin: 0;
+    padding: 0 23px 0 23px;
+  }
+  .about_parag {
+    padding: 68px 0 80px 28px;
+  }
+  .about_parag h3 {
+    margin: 20px 0 12px;
+  }
+  .about_parag p {
+    margin: 14px 0 16px;
+  }
+  .about_statistics {
+    padding-top: 94px;
+    padding-bottom: 138px;
   }
 }/*# sourceMappingURL=main.css.map */

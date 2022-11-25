@@ -1,7 +1,7 @@
 .greeting-part {
   display: flex;
   justify-content: space-between;
-  padding: 94px 0 160px;
+  padding: 94px 0 0;
 }
 
 .greeting-title {
@@ -205,7 +205,7 @@
   }
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1069.98px) {
  
   .greeting-part {
     flex-direction: column-reverse;
@@ -239,7 +239,7 @@
     width: 100%;
   }
   .greeting-part {
-    padding: 16px 0 20px;
+    padding: 16px 0 0;
   }
 
   .greeting-title {

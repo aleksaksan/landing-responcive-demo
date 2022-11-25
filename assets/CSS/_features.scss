@@ -1,0 +1,84 @@
+.features-part {
+  padding-top: 184px;
+  padding-bottom: 192px;
+}
+
+.features-card {
+  width: 270px;
+  height: 400px;
+  box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.080899);
+  border-radius: 100px 24px 24px 24px;
+  text-align: center;
+  padding: 0 32px;
+  color: #333333;
+
+  &>.circle {
+    margin: 0 auto;
+    margin-top: -16px;
+    margin-bottom: 29px;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  &>h4 {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Elsie";
+  }
+
+  &:nth-child(1) {
+    .circle {
+      background: linear-gradient(180deg, #FFF0EC 0%, #FFDDD4 100%);
+    }
+  }
+  &:nth-child(2) {
+    margin-top: 48px;
+    .circle {
+      background: linear-gradient(180deg, #E4FFFC 0%, #C5FFF8 100%);
+    }
+  }
+  &:nth-child(3) {
+    .circle {
+      background: linear-gradient(180deg, #FFF8EC 0%, #FFEFD4 100%);
+    }
+  }
+
+  &>p {
+    color: #33333380;
+    margin: 17px 0 13px;
+    line-height: 32px;
+  }
+}
+
+.cards-container {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  padding-top: 82px;
+  flex-wrap: wrap;
+}
+
+.cards-container:last-child {
+  border-radius: 24px 24px 100px 24px;
+}
+
+@media (max-width: 766.98px) {
+  .features-part {
+    padding-top: 152px;
+  }
+
+  .features-card {
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+  
+  .cards-container {
+    gap: 64px;
+  }
+}

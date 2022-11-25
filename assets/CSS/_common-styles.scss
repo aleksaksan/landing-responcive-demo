@@ -41,6 +41,9 @@ ul {
 .font-elsie {
   font-family: 'Elsie';
   font-weight: 900;
+  font-size: 56px;
+  line-height: 64px;
+  color: #333333;
 }
 
 .flex-between {
@@ -76,4 +79,35 @@ a {
 
 .pos-absolut {
   position: absolute;
+}
+
+.page-title {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 470px;
+  text-align: center;
+  color: #333333;
+
+  .font-elsie {
+    margin: 23px 0 11px;
+  }
+
+  &>p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .page-title .font-elsie {
+    margin: 20px 0 14px;
+  }
+}
+
+@media (max-width: 766.98px) {
+  .font-elsie {
+    font-size: 40px;    
+    line-height: 48px; 
+  }
 }

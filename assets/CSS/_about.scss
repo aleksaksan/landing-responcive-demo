@@ -1,0 +1,192 @@
+.about-part {
+  padding-top: 48px;
+  .container {
+    overflow: visible ;
+  }
+}
+
+.about_background-container {
+  background: linear-gradient(135deg, #FCEEE9 0%, #ECF8F8 100%);
+  border-radius: 0px 24px 100px 0px;
+  max-width: 1305px;
+  padding: 0 0 0 9.375vw;
+  margin-left: -9.375vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.about_picture-container {
+  margin: -48px 30px -32px 0;
+  position: relative;
+  width: 570px;
+  height: 672px;
+
+  .green-rect {
+    background: linear-gradient(180deg, #96E4DD 0%, #5DC4B8 100%);
+    border-radius: 16px 32px 16px 16px;
+    width: 202px;
+    height: 96px;
+    top: 16px;
+    right: 68px;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      background: url(../img/png/about_shape.png);
+      width: 850px;
+      height: 722px;
+      position: absolute;
+      top: -313px;
+      left: -324px;
+    }
+  }
+
+  .orange-rect {
+    background: linear-gradient(180deg, #F89C72 0%, #EF633E 100%);
+    border-radius: 24px 24px 24px 100px;
+    width: 270px;
+    height: 192px;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+
+    &::before {
+      content: '';
+      background: url(../img/png/about_shape.png);
+      width: 850px;
+      height: 722px;
+      position: absolute;
+      top: -265px;
+      left: -290px;
+    }
+  }
+}
+
+.japan-kitchen-img {
+  width: 270px;
+  height: 448px;
+  border-radius: 100px 24px 24px 24px;
+  background-image: url('../img/png/about_japan_kitchen.png');
+}
+
+.europe-kitchen-img {
+  width: 270px;
+  height: 416px;
+  position: absolute;
+  border-radius: 24px 24px 100px 24px;
+  background-image: url('../img/png/about_europe_kitchen.png');
+  right: 0;
+  top: 144px;
+}
+
+.about_parag {
+  width: 370px;
+  padding-top: 88px;
+  margin: 0 auto;
+
+  h3 {
+    margin: 23px 0 25px;
+  }
+  div {
+    color: #333333;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  p {
+    margin: 18px 0 32px;
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .link-btn {
+    text-transform: uppercase;
+  }
+}
+
+.about_picture {
+  display: none;
+  margin-top: -32px;
+}
+
+.about_statistics {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.statistics-card {
+  margin-top: 33px;
+  width: 206px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .manrope-orange {
+    margin-top: 9px;
+    margin-bottom: 18px;
+  }
+  
+  .font-elsie {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  &>p {
+    line-height: 32px;
+    color: rgba(51, 51, 51, 0.5);
+  }
+}
+
+.about_statistics {
+  padding-top: 142px;
+  padding-bottom: 170px;
+}
+
+@media (max-width: 766.98px) {
+  .about_picture {
+    display: block;
+  }
+  .about_picture-container {
+    display: none;
+  }
+  
+  .about-part .font-elsie {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .about_parag {
+    padding: 36px 0 80px 28px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .about-part {
+    padding-top: 32px;
+    &>.container {
+      padding: 0;
+
+      &>.about_background-container {
+        margin: 0;
+        padding: 0 23px 0 23px;
+      }
+    }
+  }
+
+  .about_parag {
+    padding: 68px 0 80px 28px;
+  }
+  
+  .about_parag h3 {
+    margin: 20px 0 12px;
+  }
+  .about_parag p {
+    margin: 14px 0 16px;
+  }
+  .about_statistics {
+    padding-top: 94px;
+    padding-bottom: 138px;
+  }
+}
