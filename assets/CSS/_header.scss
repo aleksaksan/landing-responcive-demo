@@ -5,10 +5,11 @@
 }
 
 header {
-  padding: 16px 0;
   .container {
     display: flex;
     align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   nav {
@@ -17,6 +18,16 @@ header {
 
   nav+.link-btn {
     margin-left: auto;
+  }
+
+  .gradient-cirle {
+    top: 0;
+    right: 0;
+
+    &::before {
+      left: 0;
+      bottom: 0;
+    }
   }
 }
 
@@ -30,7 +41,7 @@ header {
   display: none;
 }
 
-@media (max-width: 766.98px) {
+@media (max-width: 767.98px) {
 
   header .container {
     justify-content: space-between;

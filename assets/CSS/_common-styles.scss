@@ -5,8 +5,6 @@
 }
 
 body {
-  max-width: 1440px;
-  margin: 0 auto;
   font-family: 'Manrope';
   font-weight: normal;
   background-color: white;
@@ -14,6 +12,13 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+.max-width-container {
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+  
 }
 
 @media (max-width: 1439.98px) {
@@ -24,7 +29,7 @@ ul {
 
 .container {
   min-width: 320px;
-  max-width: 1116px;
+  max-width: 1170px;
   padding-left: 23px;
   padding-right: 23px;
   margin: 0 auto;
@@ -99,15 +104,98 @@ a {
   }
 }
 
+.gradient-cirle {
+  position: absolute;
+  width: 42.99vw;
+  height: 39.79vw;
+  max-width: 619px;
+  max-height: 573px;
+  overflow: hidden;
+  z-index: -5;
+
+  &::before {
+    content: '';
+    width: 61.875vw;
+    max-width: 891px;
+    height: 61.875vw;
+    max-height: 891px;
+    background: linear-gradient(133.44deg, #FCEEE9 17.94%, #ECF8F8 85.2%);
+    border-radius: 50%;
+    position: absolute;
+  }
+}
+
+.gradient-cirle.left-sided {
+    position: absolute;
+    width: 33vw;
+    height: 66vw;
+    max-width: 475px;
+    max-height: 891px;
+    overflow: hidden;
+    z-index: -5;
+
+    &::before {
+    right: 0;
+  }
+}
+
+.background-container {
+  background: linear-gradient(135deg, #FCEEE9 0%, #ECF8F8 100%);
+  max-width: 1305px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.left-background-container {
+  border-radius: 0px 24px 100px 0px;
+  padding: 0 0 0 9.375vw;
+}
+
+.right-background-container {
+  border-radius: 100px 0px 0px 24px;
+  padding: 0 9.375vw 0 0;
+  margin-left: auto;
+}
+
+.elsie-fs24 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Elsie";
+  color: #333333;
+}
+
 @media (max-width: 1070px) {
   .page-title .font-elsie {
     margin: 20px 0 14px;
   }
+
+  .background-container {
+    padding: 0 23px 0 23px;
+  }
+
+  .gradient-cirle.left-sided {
+    height: 62vw;
+  }
 }
 
-@media (max-width: 766.98px) {
+@media (max-width: 767.98px) {
   .font-elsie {
     font-size: 40px;    
     line-height: 48px; 
+  }
+
+  .gradient-cirle {
+    width: 70.4vw;
+    height: 89.33vw;
+    &::before {
+      width: 119vw;
+      height: 119vw;
+    }
+  }
+
+  .gradient-cirle.left-sided {
+    width: 59.5vw;
+    height: 118.7vw;
   }
 }
