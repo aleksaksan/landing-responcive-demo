@@ -8,6 +8,7 @@ body {
   font-family: "Manrope";
   font-weight: normal;
   background-color: white;
+  color: #333333;
 }
 
 ul {
@@ -122,6 +123,7 @@ a {
 
 .gradient-cirle.left-sided {
   position: absolute;
+  left: 0;
   width: 33vw;
   height: 66vw;
   max-width: 475px;
@@ -152,6 +154,14 @@ a {
   margin-left: auto;
 }
 
+@media (min-width: 1439px) {
+  .left-background-container {
+    padding: 0 0 0 135px;
+  }
+  .right-background-container {
+    padding: 0 135px 0 0;
+  }
+}
 .elsie-fs24 {
   font-size: 24px;
   line-height: 32px;
@@ -501,7 +511,6 @@ header .gradient-cirle::before {
   .greeting-text-block-wrapper {
     margin-top: 26px;
     padding: 0 28px;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -644,6 +653,7 @@ header .gradient-cirle::before {
 .about_parag {
   width: 370px;
   padding-top: 88px;
+  padding-bottom: 80px;
   margin: 0 auto;
 }
 .about_parag h3 {
@@ -705,9 +715,6 @@ header .gradient-cirle::before {
   .about-part > .container {
     padding: 0;
   }
-  .about_parag {
-    padding-bottom: 80px;
-  }
   .about_parag h3 {
     margin: 20px 0 12px;
   }
@@ -731,13 +738,22 @@ header .gradient-cirle::before {
     padding-bottom: 80px;
   }
 }
+.menu_cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 114px;
+  margin-bottom: 64px;
+}
+
 .menu_cards-container {
   display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
-  padding-top: 66px;
-  padding-bottom: 192px;
+  position: relative;
+  left: 0;
+  top: 0;
 }
 
 .menu_card {
@@ -746,6 +762,8 @@ header .gradient-cirle::before {
   height: 320px;
   box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.080899);
   border-radius: 50px 24px 24px 24px;
+  padding: 0 32px 44px 32px;
+  background-color: white;
 }
 
 .menu_card:first-child {
@@ -755,7 +773,7 @@ header .gradient-cirle::before {
   width: 270px;
   height: 320px;
   border-radius: 100px 24px 24px 24px;
-  left: -32px;
+  margin-left: -64px;
 }
 .menu_card:first-child > .menu_img-wrapper > img {
   left: -5px;
@@ -768,11 +786,97 @@ header .gradient-cirle::before {
   width: 254px;
   height: 224px;
   border-radius: 50px 24px 24px 24px;
-  top: -32px;
-  left: -16px;
+  margin-top: -32px;
+  margin-left: -48px;
+  margin-bottom: 25px;
 }
 .menu_img-wrapper > img {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.price-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #E4FFFC 0%, #C5FFF8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 32px;
+  bottom: -16px;
+  box-shadow: 0px 16px 24px rgba(0, 24, 52, 0.08);
+}
+
+.rating-container {
+  display: flex;
+  margin-top: 10px;
+}
+.rating-container > img + img {
+  margin-left: 6px;
+}
+
+.flex-center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu_category-title {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 105px;
+  margin-bottom: 72px;
+}
+
+.category-cards-container {
+  margin-bottom: 256px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  width: 170px;
+  height: 192px;
+  border-radius: 50px 24px 24px 24px;
+  text-align: center;
+}
+.category-card > .circle {
+  width: 128px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -32px;
+  margin-bottom: 26px;
+  background-color: white;
+  box-shadow: 0px 8px 48px rgba(0, 24, 52, 0.080899);
+}
+.category-card:nth-child(1) {
+  background: linear-gradient(180deg, #FFF0EC 0%, #FFDDD4 100%);
+}
+.category-card:nth-child(2) {
+  background: linear-gradient(180deg, #E4FFFC 0%, #C5FFF8 100%);
+}
+.category-card:nth-child(3) {
+  background: linear-gradient(180deg, #FFF8EC 0%, #FFEFD4 100%);
+}
+.category-card:nth-child(4) {
+  background: linear-gradient(180deg, #FFF0EC 0%, #FFDDD4 100%);
+}
+
+.menu_slider {
+  position: relative;
+}
+
+@media (max-width: 1070px) {
+  .menu_slider {
+    width: 333px;
+    overflow: hidden;
+  }
 }/*# sourceMappingURL=main.css.map */

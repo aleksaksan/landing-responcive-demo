@@ -8,6 +8,7 @@ body {
   font-family: 'Manrope';
   font-weight: normal;
   background-color: white;
+  color: #333333;
 }
 
 ul {
@@ -127,6 +128,7 @@ a {
 
 .gradient-cirle.left-sided {
     position: absolute;
+    left: 0;
     width: 33vw;
     height: 66vw;
     max-width: 475px;
@@ -156,6 +158,16 @@ a {
   border-radius: 100px 0px 0px 24px;
   padding: 0 9.375vw 0 0;
   margin-left: auto;
+}
+
+@media (min-width: 1439px) {
+  .left-background-container {
+    padding: 0 0 0 135px;
+  }
+
+  .right-background-container {
+    padding: 0 135px 0 0;
+  }
 }
 
 .elsie-fs24 {
