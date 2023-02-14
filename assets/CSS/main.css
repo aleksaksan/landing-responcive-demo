@@ -139,19 +139,20 @@ a {
   background: linear-gradient(135deg, #FCEEE9 0%, #ECF8F8 100%);
   max-width: 1305px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .left-background-container {
   border-radius: 0px 24px 100px 0px;
   padding: 0 0 0 9.375vw;
+  justify-content: center;
 }
 
 .right-background-container {
   border-radius: 100px 0px 0px 24px;
-  padding: 0 9.375vw 0 0;
+  padding: 0 9.375vw 0 100px;
   margin-left: auto;
+  justify-content: space-between;
 }
 
 @media (min-width: 1439px) {
@@ -159,7 +160,7 @@ a {
     padding: 0 0 0 135px;
   }
   .right-background-container {
-    padding: 0 135px 0 0;
+    padding: 0 135px 0 100px;
   }
 }
 .elsie-fs24 {
@@ -167,6 +168,47 @@ a {
   line-height: 32px;
   font-family: "Elsie";
   color: #333333;
+}
+
+.sliders-pin {
+  width: 12px;
+  height: 12px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: #F3F3F3;
+  position: relative;
+  cursor: pointer;
+}
+.sliders-pin:hover {
+  background-color: #8e8e8e;
+}
+.sliders-pin:active {
+  background-color: #d45a39;
+}
+
+.sliders-pin + .sliders-pin {
+  margin-left: 20px;
+}
+
+.sliders-pin.active + .sliders-pin {
+  margin-left: 18px;
+}
+
+.sliders-pin + .sliders-pin.active {
+  margin-left: 18px;
+}
+
+.sliders-pin.active {
+  width: 16px;
+  height: 16px;
+  background-color: #EF633E;
+}
+.sliders-pin.active:hover {
+  background-color: #ee8669;
+}
+.sliders-pin.active:active {
+  background-color: #d45a39;
 }
 
 @media (max-width: 1070px) {
@@ -749,11 +791,11 @@ header .gradient-cirle::before {
 .menu_cards-container {
   display: flex;
   gap: 30px;
-  justify-content: center;
   align-items: center;
   position: relative;
-  left: 0;
-  top: 0;
+  left: 32px;
+  top: 32px;
+  transition: all ease-in-out 0.4s;
 }
 
 .menu_card {
@@ -834,7 +876,7 @@ header .gradient-cirle::before {
 
 .category-cards-container {
   margin-bottom: 256px;
-  gap: 30px;
+  gap: 48px 30px;
   flex-wrap: wrap;
 }
 
@@ -870,13 +912,109 @@ header .gradient-cirle::before {
   background: linear-gradient(180deg, #FFF0EC 0%, #FFDDD4 100%);
 }
 
-.menu_slider {
+.menu_slider-window {
   position: relative;
+}
+.menu_slider-window > .pins-container {
+  display: none;
+}
+.menu_slider-window > .flex-center-container {
+  margin-top: 96px;
+}
+
+.bg-picture-wrapper {
+  width: 770px;
+  height: 592px;
+  border-radius: 100px 24px 24px 24px;
+  overflow: hidden;
+  position: relative;
+  top: -80px;
+  animation-duration: 1s;
+  animation-name: nextslide;
+  display: none;
+}
+.bg-picture-wrapper > img {
+  position: absolute;
+  width: 1027px;
+  height: 684px;
+  top: -16px;
+  left: -174px;
+}
+
+@keyframes nextslide {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu_slides-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(93, 196, 184, 0.500198);
+  outline: none;
+  border-radius: 50%;
+}
+.menu_slides-btn:hover {
+  background-color: rgba(93, 196, 184, 0.500198);
+}
+.menu_slides-btn:active {
+  background-color: rgba(93, 196, 184, 0.338);
+}
+.menu_slides-btn.prev-btn {
+  margin-right: 15px;
+}
+.menu_slides-btn.next-btn {
+  rotate: 180deg;
+  margin-left: 12px;
+}
+
+.menu_parag {
+  width: 270px;
+  padding-top: 104px;
+}
+.menu_parag h2 {
+  margin-bottom: 23px;
+}
+.menu_parag p {
+  line-height: 32px;
+  margin-top: 27px;
+  margin-bottom: 33px;
+}
+
+.menu_sliders-btn-container {
+  display: flex;
+  align-items: center;
+  font-family: "Elsie";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 @media (max-width: 1070px) {
-  .menu_slider {
-    width: 333px;
+  .menu_slider-window {
+    width: 334px;
+    margin: 0 auto;
     overflow: hidden;
+  }
+  .menu_slider-window > .pins-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .menu_slider-window > .flex-center-container {
+    margin-top: 48px;
+  }
+  .menu_cards-container {
+    gap: 100px;
+  }
+  .category-cards-container {
+    gap: 48px 16px;
   }
 }/*# sourceMappingURL=main.css.map */

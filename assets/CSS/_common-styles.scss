@@ -145,19 +145,20 @@ a {
   background: linear-gradient(135deg, #FCEEE9 0%, #ECF8F8 100%);
   max-width: 1305px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .left-background-container {
   border-radius: 0px 24px 100px 0px;
   padding: 0 0 0 9.375vw;
+  justify-content: center;
 }
 
 .right-background-container {
   border-radius: 100px 0px 0px 24px;
-  padding: 0 9.375vw 0 0;
+  padding: 0 9.375vw 0 100px;
   margin-left: auto;
+  justify-content: space-between;
 }
 
 @media (min-width: 1439px) {
@@ -166,7 +167,7 @@ a {
   }
 
   .right-background-container {
-    padding: 0 135px 0 0;
+    padding: 0 135px 0 100px;
   }
 }
 
@@ -175,6 +176,47 @@ a {
   line-height: 32px;
   font-family: "Elsie";
   color: #333333;
+}
+
+.sliders-pin {
+  width: 12px;
+  height: 12px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: #F3F3F3;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    background-color: #8e8e8e;
+  }
+  &:active {
+    background-color: #d45a39;
+  }
+}
+
+.sliders-pin+.sliders-pin {
+  margin-left: 20px;
+}
+
+.sliders-pin.active+.sliders-pin {
+  margin-left: 18px;
+}
+
+.sliders-pin+.sliders-pin.active {
+  margin-left: 18px;
+}
+
+.sliders-pin.active {
+  width: 16px;
+  height: 16px;
+  background-color: #EF633E;
+  &:hover {
+    background-color: #ee8669;
+  }
+  &:active {
+    background-color: #d45a39;
+  }
 }
 
 @media (max-width: 1070px) {
@@ -211,3 +253,4 @@ a {
     height: 118.7vw;
   }
 }
+

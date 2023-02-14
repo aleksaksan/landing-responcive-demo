@@ -9,11 +9,11 @@
 .menu_cards-container {
   display: flex;
   gap: 30px;
-  justify-content: center;
   align-items: center;
   position: relative;
-  left: 0;
-  top: 0;
+  left: 32px;
+  top: 32px;
+  transition: all ease-in-out 0.4s;
 }
 
 .menu_card {
@@ -96,7 +96,7 @@
 
 .category-cards-container {
   margin-bottom: 256px;
-  gap: 30px;
+  gap: 48px 30px;
   flex-wrap: wrap;
 }
 
@@ -134,14 +134,120 @@
   }
 }
 
-.menu_slider {
+.menu_slider-window {
   position: relative;
+
+  &>.pins-container {
+    display: none;
+  }
+
+  &>.flex-center-container {
+    margin-top: 96px;
+  }
+}
+
+.bg-picture-wrapper {
+  width: 770px;
+  height: 592px;
+  border-radius: 100px 24px 24px 24px;
+  overflow: hidden;
+  position: relative;
+  top: -80px;
+  &>img {
+    position: absolute;
+    width: 1027px;
+    height: 684px;
+    top: -16px;
+    left: -174px;
+  }
+  animation-duration: 1s;
+  animation-name: nextslide;
+  display: none;
+}
+
+@keyframes nextslide {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu_slides-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(93, 196, 184, 0.500198);
+  outline: none;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: rgba(93, 196, 184, 0.500198);
+  }
+  &:active {
+    background-color: rgba(93, 196, 184, 0.338);
+  }
+
+  &.prev-btn {
+    margin-right: 15px;
+  }
+  &.next-btn {
+    rotate: 180deg;
+    margin-left: 12px;
+  }
+}
+
+.menu_parag {
+  width: 270px;
+  padding-top: 104px;
+
+  h2 {
+    margin-bottom: 23px;
+  }
+
+  p {
+    line-height: 32px;
+    margin-top: 27px;
+    margin-bottom: 33px;
+  }
+}
+
+.menu_sliders-btn-container {
+  display: flex;
+  align-items: center;
+  font-family: 'Elsie';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 @media (max-width: 1070px) {
-  .menu_slider {
-    width: 333px;
+  .menu_slider-window {
+    width: 334px;
+    margin: 0 auto;
     overflow: hidden;
+
+    &>.pins-container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+    }
+
+    &>.flex-center-container {
+      margin-top: 48px;
+    }
+  }
+  .menu_cards-container {
+    gap: 100px;
+  }
+
+  .category-cards-container {
+    gap: 48px 16px;
   }
 }
 
