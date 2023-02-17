@@ -147,12 +147,7 @@
 }
 
 .bg-picture-wrapper {
-  width: 770px;
-  height: 592px;
-  border-radius: 100px 24px 24px 24px;
-  overflow: hidden;
-  position: relative;
-  top: -80px;
+  
   &>img {
     position: absolute;
     width: 1027px;
@@ -201,18 +196,7 @@
 }
 
 .menu_parag {
-  width: 270px;
   padding-top: 104px;
-
-  h2 {
-    margin-bottom: 23px;
-  }
-
-  p {
-    line-height: 32px;
-    margin-top: 27px;
-    margin-bottom: 33px;
-  }
 }
 
 .menu_sliders-btn-container {
@@ -246,11 +230,10 @@
     gap: 100px;
   }
 
-  .category-cards-container {
-    gap: 48px 16px;
-  }
 }
 
 @media (max-width: 767.98px) {
-  
+  .category-cards-container {
+    gap: 48px 14px;
+  }
 }

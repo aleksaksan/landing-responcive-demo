@@ -1,0 +1,38 @@
+.application_parag {
+  width: 370px;
+}
+
+.application_img-container {
+  width: 600px;
+  position: relative;
+
+  .apps-left-shape {
+    top: -48px;
+    position: absolute;
+  }
+  .apps-phone {
+    position: relative;
+    left: 45px;
+    top: 0;
+    z-index: 1;
+    margin-bottom: -207px;
+  }
+  .apps-right-shape {
+    position: absolute;
+    top: 128px;
+    right: 30px;
+  }
+}
+
+.application_parag {
+  padding-top: 88px;
+  margin-right: 100px;
+  &>p {
+    width: 370px;
+  }
+}
+
+.application_btn-container {
+  display: flex;
+  justify-content: space-between;
+}

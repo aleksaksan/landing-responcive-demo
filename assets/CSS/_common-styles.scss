@@ -151,7 +151,7 @@ a {
 .left-background-container {
   border-radius: 0px 24px 100px 0px;
   padding: 0 0 0 9.375vw;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .right-background-container {
@@ -159,6 +159,35 @@ a {
   padding: 0 9.375vw 0 100px;
   margin-left: auto;
   justify-content: space-between;
+}
+
+.sliders-container {
+  display: flex;
+  position: relative;
+  .sliders-window {
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    
+    &>.pins-container {
+      margin-top: 80px;
+      text-align: center;
+    }
+    .sliders-cards-container {
+      display: flex;
+      position: relative;
+    }
+  }
+}
+
+.bg-picture-container {
+  width: 770px;
+  height: 592px;
+  border-radius: 100px 24px 24px 24px;
+  overflow: hidden;
+  position: relative;
+  top: -80px;
+  padding-bottom: 80px;
 }
 
 @media (min-width: 1439px) {
@@ -176,6 +205,12 @@ a {
   line-height: 32px;
   font-family: "Elsie";
   color: #333333;
+}
+
+.parag-gray {
+  color: rgba(51, 51, 51, 0.5);
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .sliders-pin {
@@ -216,6 +251,20 @@ a {
   }
   &:active {
     background-color: #d45a39;
+  }
+}
+
+.parag {
+  padding-top: 88px;
+  width: 370px;
+  
+  &>.manrope-orange {
+    margin-bottom: 23px;
+  }
+  &>p {
+    line-height: 32px;
+    margin-top: 27px;
+    margin-bottom: 33px;
   }
 }
 
