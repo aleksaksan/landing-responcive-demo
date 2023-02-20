@@ -159,6 +159,7 @@ a {
   padding: 0 9.375vw 0 100px;
   margin-left: auto;
   justify-content: space-between;
+  padding-bottom: 80px;
 }
 
 .sliders-container {
@@ -186,8 +187,7 @@ a {
   border-radius: 100px 24px 24px 24px;
   overflow: hidden;
   position: relative;
-  top: -80px;
-  padding-bottom: 80px;
+  margin-top: -80px;
 }
 
 @media (min-width: 1439px) {
@@ -257,6 +257,7 @@ a {
 .parag {
   padding-top: 88px;
   width: 370px;
+  margin: 0 auto;
   
   &>.manrope-orange {
     margin-bottom: 23px;
@@ -280,12 +281,21 @@ a {
   .gradient-cirle.left-sided {
     height: 62vw;
   }
+
+  
+  .bg-picture-container {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 767.98px) {
   .font-elsie {
     font-size: 40px;    
     line-height: 48px; 
+  }
+  
+  .parag {
+    padding-left: 28px;
   }
 
   .gradient-cirle {
@@ -300,6 +310,12 @@ a {
   .gradient-cirle.left-sided {
     width: 59.5vw;
     height: 118.7vw;
+  }
+
+  .bg-picture-container {
+    margin: 0 auto;
+    width: 100vw;
+    height: 75vw;
   }
 }
 

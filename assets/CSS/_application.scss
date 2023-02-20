@@ -1,5 +1,5 @@
 .application_parag {
-  width: 370px;
+  padding-bottom: 112px;
 }
 
 .application_img-container {
@@ -7,32 +7,49 @@
   position: relative;
 
   .apps-left-shape {
-    top: -48px;
+    top: -8%;
     position: absolute;
+    width: 45%;
   }
   .apps-phone {
     position: relative;
-    left: 45px;
+    left: 7.5%;
     top: 0;
     z-index: 1;
     margin-bottom: -207px;
+    width: 80%;
   }
   .apps-right-shape {
     position: absolute;
-    top: 128px;
-    right: 30px;
+    top: 21.33%;
+    right: 5%;
+    width: 45%;
   }
 }
 
 .application_parag {
   padding-top: 88px;
-  margin-right: 100px;
-  &>p {
-    width: 370px;
-  }
 }
 
 .application_btn-container {
   display: flex;
   justify-content: space-between;
+}
+
+.application-part {
+  .background-container {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media (max-width: 1070px) {
+  .application_img-container {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .app-link-btn {
+    padding: 16px 16px 14px;
+  }
 }

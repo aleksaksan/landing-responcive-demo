@@ -150,8 +150,7 @@
   
   &>img {
     position: absolute;
-    width: 1027px;
-    height: 684px;
+    width: 133%;
     top: -16px;
     left: -174px;
   }
@@ -197,6 +196,7 @@
 
 .menu_parag {
   padding-top: 104px;
+  width: 270px;
 }
 
 .menu_sliders-btn-container {
@@ -206,6 +206,14 @@
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
+}
+
+@media (max-width: 1277px) {
+  .menu-part {
+    .bg-picture-container {
+      margin-top: 48px;
+    }
+  }
 }
 
 @media (max-width: 1070px) {
@@ -229,11 +237,27 @@
   .menu_cards-container {
     gap: 100px;
   }
+  
+  .right-background-container {
+    padding: 0 23px 80px;
+  }
 
+  .bg-picture-container {
+
+  }
 }
 
 @media (max-width: 767.98px) {
   .category-cards-container {
     gap: 48px 14px;
+    margin-bottom: 94px;
+  }
+
+  .bg-picture-wrapper {
+  
+    &>img {
+      top: 0;
+      left: 0;
+    }
   }
 }

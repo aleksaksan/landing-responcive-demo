@@ -55,3 +55,23 @@
   padding-bottom: 160px;
   max-width: 966px;
 }
+
+@media (max-width: 1070px) {
+  .sixth-slides-slider {
+    width: 334px;
+
+    .sliders-cards-container {
+      gap: 168px;
+    }
+  }
+
+  .testimonials_cards-container {
+    left: 32px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .testimonials_slider-window {
+    padding-bottom: 144px;
+  }
+}
