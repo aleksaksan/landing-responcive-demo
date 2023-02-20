@@ -172,6 +172,7 @@ a {
 .sliders-container .sliders-window .sliders-cards-container {
   display: flex;
   position: relative;
+  transition: all ease-in-out 0.4s;
 }
 
 .bg-picture-container {
@@ -1246,21 +1247,32 @@ header .gradient-cirle::before {
   }
 }
 .contacts-map {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .contacts-map-info-wrapper {
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  top: 65.5675%;
+  left: 50%;
+  height: 50%;
+  width: 50%;
 }
 
 .contacts-map-info {
-  position: relative;
+  position: absolute;
+  top: -209px;
+  left: -119px;
 }
 .contacts-map-info > svg {
   margin: 0 auto;
   display: block;
   margin-top: 17px;
+}
+
+.contacts-part .bg-picture-container {
+  font-size: 0;
+  overflow: inherit;
 }
 
 .address-container {

@@ -2,7 +2,7 @@ const menuSlider = document.querySelector('.menu_slider-window');
 const menuCardsContainer = menuSlider.querySelector('.menu_cards-container');
 const slidersPins = menuSlider.querySelectorAll('.sliders-pin');
 
-// move 270px + 100px width+gap
+// offset = width + gap = 270px + 100px 
 const offset = 370;
 let activeIdx = 0;
 

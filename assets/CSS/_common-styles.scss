@@ -177,6 +177,7 @@ a {
     .sliders-cards-container {
       display: flex;
       position: relative;
+      transition: all ease-in-out 0.4s;
     }
   }
 }
