@@ -1116,14 +1116,11 @@ header .gradient-cirle::before {
   gap: 30px;
   left: 48px;
 }
-.testimonials_cards-container .testimonials-card:nth-child(3), .testimonials_cards-container .testimonials-card:nth-child(6) {
-  margin-right: 170px;
-}
 
 .testimonials_slider-window {
   padding-top: 66px;
   padding-bottom: 160px;
-  max-width: 966px;
+  width: 948px;
 }
 
 @media (max-width: 1070px) {
@@ -1210,13 +1207,10 @@ header .gradient-cirle::before {
   left: 52px;
   top: 32px;
 }
-.blog_cards-container .blog-card:nth-child(3), .blog_cards-container .blog-card:nth-child(6) {
-  margin-right: 152px;
-}
 
 .blog_slider-window {
   position: relative;
-  max-width: 958px;
+  width: 920px;
 }
 
 .blog-card {

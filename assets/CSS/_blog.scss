@@ -14,15 +14,11 @@
   gap: 46px;
   left: 52px;
   top: 32px;
-
-  & .blog-card:nth-child(3), & .blog-card:nth-child(6) {
-    margin-right: 152px;
-  }
 }
 
 .blog_slider-window {
   position: relative;
-  max-width: 958px;
+  width: 920px;
 }
 
 .blog-card {

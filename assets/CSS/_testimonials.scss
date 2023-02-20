@@ -44,16 +44,12 @@
 .testimonials_cards-container {
   gap: 30px;
   left: 48px;
-
-  & .testimonials-card:nth-child(3), & .testimonials-card:nth-child(6) {
-    margin-right: 170px;
-  }
 }
 
 .testimonials_slider-window {
   padding-top: 66px;
   padding-bottom: 160px;
-  max-width: 966px;
+  width: 948px;
 }
 
 @media (max-width: 1070px) {
