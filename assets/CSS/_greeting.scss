@@ -1,8 +1,10 @@
 .greeting-part {
+  padding-top: 80px;
+  
   .container {
     display: flex;
     justify-content: space-between;
-    padding: 94px 0 0;
+    padding: 94px 23px 2px;
   }
 }
 
@@ -183,6 +185,7 @@
     .container {
       flex-direction: column-reverse;
       flex-grow: 0;
+      padding: 94px 23px 2px;
     }
   }
 
@@ -206,7 +209,7 @@
   }
   .greeting-part {
     .container {
-      padding: 16px 0 0;
+      padding: 16px 23px 2px;
     }
   }
 

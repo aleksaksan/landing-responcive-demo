@@ -22,9 +22,12 @@ ul {
   
 }
 
-@media (max-width: 1439.98px) {
-  .container {
-    overflow: hidden;
+.common-link {
+  font-size: 16px;
+  line-height: 32px;
+  color: black;
+  &:hover {
+    color: #5DC4B8;
   }
 }
 
@@ -78,9 +81,21 @@ a {
   border: 1px solid #5DC4B8;
 }
 
+.transponent-btn:hover {
+  background: linear-gradient(180deg, #96E4DD 0%, #5DC4B8 100%);
+  color: white;
+  border: 1px solid white;
+}
+
 .filled-btn {
   background: linear-gradient(180deg, #96E4DD 0%, #5DC4B8 100%);
   color: white;
+}
+
+.filled-btn:hover {
+  background: transparent;
+  color: #5DC4B8;
+  outline: 1px solid #5DC4B8;
 }
 
 .pos-absolut {

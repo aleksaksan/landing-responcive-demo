@@ -16,22 +16,28 @@
     <div class="max-width-container">
       <div class="gradient-cirle"></div>
     </div>
-    <div class="container">
-      <div class="title font-elsie">FOOD</div>
-      <nav>
-        <ul class="flex-between">
-          <li><a href="#" class="nav-link">About</a></li>
-          <li><a href="#" class="nav-link">Menu</a></li>
-          <li><a href="#" class="nav-link">Blog</a></li>
-          <li><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-      <a class="contact-us-button link-btn transponent-btn">CONTACT US</a>
-      <div class="header-burger-btn">
-        <span></span>
+    
+    <div class="header-wrapper">
+
+      <div class="container">
+        <div class="title font-elsie">FOOD</div>
+        <nav>
+          <ul class="flex-between">
+            <li><a href="#about" class="common-link nav-link">About</a></li>
+            <li><a href="#menu" class="common-link nav-link">Menu</a></li>
+            <li><a href="#blog" class="common-link nav-link">Blog</a></li>
+            <li><a href="#contact" class="common-link nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#contactus" class="contact-us-button link-btn transponent-btn">CONTACT US</a>
+        <div class="header-burger-btn">
+          <span></span>
+        </div>
+
       </div>
     </div>
   </header>
+
   <main>
     <div class="greeting-part">
       <div class="container">
@@ -69,7 +75,7 @@
       </div>
     </div>
 
-    <div class="features-part">
+    <div class="features-part" id="about">
       <div class="container">
 
         <div class="page-title">
@@ -159,7 +165,7 @@
       </div>
     </div>
 
-    <div class="menu-part">
+    <div class="menu-part" id="menu">
       <div class="container">
 
         <div class="page-title">
@@ -238,9 +244,10 @@
         </div>
         
       </div>
-      
-      <h4 class="menu_category-title">Explore by category</h4>
-      <div class="category-cards-container flex-center-container">
+      <div class="container">
+        <h4 class="menu_category-title">Explore by category</h4>
+      </div>
+      <div class="category-cards-container flex-center-container container">
         <div class="category-card">
           <div class="circle">
             <svg width="43" height="52" viewBox="0 0 43 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -466,7 +473,7 @@
 
     </div>
 
-    <div class="blog-part">
+    <div class="blog-part" id="blog">
 
       <div class="container">
         <div class="page-title">
@@ -529,7 +536,7 @@
       </div>
     </div>
 
-    <div class="contacts-part">
+    <div class="contacts-part" id="contact">
 
       <div class="max-width-container">
         <div class="right-background-container background-container">
@@ -608,16 +615,16 @@
           <h4 class="manrope-orange">Menu</h4>
           <ul>
             <li>
-              <a href="#">About</a>
+              <a class="common-link" href="#">About</a>
             </li>
             <li>
-              <a href="#">Menu</a>
+              <a class="common-link" href="#">Menu</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a class="common-link" href="#">Blog</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a class="common-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -626,18 +633,18 @@
           <h4 class="manrope-orange">Features</h4>
           <ul>
             <li>
-              <a href="#">Fresh Food</a>
+              <a class="common-link" href="#">Fresh Food</a>
             </li>
             <li>
-              <a href="#">Restaurant</a>
+              <a class="common-link" href="#">Restaurant</a>
             </li>
             <li>
-              <a href="#">Delivery</a>
+              <a class="common-link" href="#">Delivery</a>
             </li>            
           </ul>
         </div>
 
-        <div class="form-wrapper">
+        <div class="form-wrapper"  id="contactus">
           <h4 class="manrope-orange">Newsletter</h4>
           <form action="" class="subscribe-form" id="subscribe">
             <input type="text" placeholder="Your Email" required class="form-input">
@@ -646,9 +653,7 @@
         </div>
 
       </div>
-      <div class="container">
 
-      </div>
     </footer>
 
   </main>

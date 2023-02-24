@@ -4,7 +4,19 @@
   margin-right: 59px;
 }
 
+.contact-us-button:hover {
+  border: 1px solid #33333333;
+}
+
+.header-wrapper {
+  background-color: rgba(51, 51, 51, 0.2);
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
 header {
+  
   .container {
     display: flex;
     align-items: center;
@@ -31,11 +43,6 @@ header {
   }
 }
 
-.nav-link {
-  font-size: 16px;
-  line-height: 32px;
-  color: black;
-}
 
 .header-burger-btn {
   display: none;
@@ -58,6 +65,7 @@ header {
     width: 100vw;
     height: 100vh;
     align-items: start;
+    background-color: #33333380;
 
     nav {
       display: block;
